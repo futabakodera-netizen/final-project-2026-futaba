@@ -1,22 +1,21 @@
 //Scroll down to find the function to work on!
 let personalities = {
-    "angry": 0,
-    "what": 0,
-    "soldier": 0,
-    "singing" : 0,
-    "shocked" : 0,
+    "Warm Spring": 0,
+    "Cool Summer": 0,
+    "Warm Autumn": 0,
+    "Cool Winter": 0
 };
 
 let questions = [
     {
         id:0, // First question
-        text: "What is the best way to relax?",
+        text: "What color are your eyes?",
         image: "https://personal-color.co.jp/wp-content/themes/swell_child/analysis/img/4seasons.png",
         choices: {
-            "read a book": ["what", "singing"],
-            "play video games": ["soldier", "angry"],
-            "go to the beach": ["shocked", "singing"],
-            "do absolutely nothing": ["angry", "shocked"]
+            "Light brown or light black. It looks like it's sparkling.": ["Warm Autumn", "Warm Spring"],
+            "Red brown or Dark gray. The boundary between the iris and the white part of the eye creates a soft impression.": ["Warm Autumn", "Warm Spring"],
+            "Dark brown or black. Gives off a calm impression.": ["Cool Winter"],
+            "Dark red brown or black. There is a contrast between the iris and the white part of the eye.": ["angry", "shocked"]
         }
     },
     {
