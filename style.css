@@ -1,0 +1,168 @@
+body {
+    background-color: rgb(255, 247, 221);
+}
+body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Indie Flower", serif;
+    background: #fcf9ef; /* Dark ChatGPT-like background */
+    color: #fffef9; /* Soft off-white */
+}
+
+.container {
+    aspect-ratio: 60 / 30;
+    width: min(150vw, 120vh);
+    max-height: 250vh;
+    padding: 20px;
+    border-radius: 15px;
+    background: #f3e190; /* ChatGPT gray with depth */
+    box-shadow: 0 0 15px rgba(255, 251, 37, 0.6);
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #e6cc3a; /* Purple accent */
+}
+
+.title {
+    font-size: 40px;
+    margin-bottom: 3vh;
+    color: #2c1800; /* Muted purple for highlights */
+    font-family: "Titan One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#homescreen {
+    display: flex;
+    height: 50%;
+    border: 2px solid #6A658E; /* Darker muted purple */
+    border-radius: 12px;
+    background: #24262F; /* Slightly lighter dark gray */
+}
+
+.start-button {
+    font-size: 21px;
+    padding: 1vh 2vw;
+    width: 30%;
+    background-color: #3B3E47; /* Deep gray */
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 3vh;
+    border-radius: 12px;
+    border: 2px solid #8781B6; /* Purple outline */
+    color: #E5E7EB; /* Soft off-white for contrast */
+    transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+.start-button:hover {
+    background-color: #4A4E5D; /* Slightly lighter gray */
+    transform: scale(1.05);
+}
+
+.game-container {
+    display: none;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: auto;
+    font-size: 25px;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s;
+}
+/* Custom scrollbar for WebKit browsers */
+.game-container::-webkit-scrollbar {
+    width: 8px; /* Adjust the width of the scrollbar */
+}
+
+/* The track (background) of the scrollbar */
+.game-container::-webkit-scrollbar-track {
+    background: #1b1d22; /* Dark gray background */
+    border-radius: 4px;
+}
+
+/* The draggable handle of the scrollbar */
+.game-container::-webkit-scrollbar-thumb {
+    background: #8781B6; /* Purple accent */
+    border-radius: 4px;
+    transition: background 0.3s ease-in-out;
+}
+
+/* Handle on hover */
+.game-container::-webkit-scrollbar-thumb:hover {
+    background: #B3AED3; /* Lighter muted purple for hover effect */
+}
+
+
+.question-text {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+    gap: 20px;
+    color: #D1D5DB; /* Soft white */
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+#question-image {
+    border: 2px solid #6A658E; /* Darker muted purple */
+    border-radius: 12px;
+    background: #24262F; /* Slightly lighter dark gray */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.choices {
+    display: flex;
+    width: 70%;
+    height: 10%;
+    flex-direction: row; /* Arrange buttons in a column */
+    flex-wrap: wrap;
+    align-items: center; /* Center the buttons horizontally */
+    justify-content: center;
+    gap: 12px; /* Space between the buttons */
+    margin-top: 2rem; /* Space above the choices container */
+    padding: 1rem;
+}
+
+.choice-button {
+    font-family: "Indie Flower", serif;
+    font-size: 18px; /* Adjust font size to be smaller */
+    color: #B3AED3; /* Lighter muted purple */
+    padding: 1vh 1vw; /* Adjust padding based on viewport height and width */
+    border: 1px solid #8781B6; /* Purple border */
+    border-radius: 10px;
+    background-color: #3B3E47; /* Deep gray */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+.choice-button:hover {
+    background-color: #4A4E5D; /* Slightly lighter gray */
+    transform: scale(1.05);
+}
+
+/*
+Updated color palette:
+    Dark background: #1E1F22 (ChatGPT-like dark gray)
+    Container background: #2A2D36 (Deep gray)
+    Purple accent: #8781B6 (Muted purple)
+    Darker muted purple: #6A658E
+    Lighter muted purple: #B3AED3
+    Soft white text: #D1D5DB
+    Deep gray buttons: #3B3E47
+    Hover color: #4A4E5D
+*/

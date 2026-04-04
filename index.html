@@ -1,1 +1,27 @@
-<h1>hello</h1>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Quiz</title>
+  <link rel="icon" href="lil_images/cats/orange.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+
+  <div class="title">What personal color are you?</div>
+  <img id="homescreen" src="pictures/4seasons.png" alt="Story Image"/>
+  <a href="#" class="start-button" onclick="startGame()">Start</a>
+
+  <div class="game-container" id="game-container">
+    <div class ="question-text" id="question-text"></div>
+    <div class="image-container">
+      <img id="question-image" src="https://placehold.co/500" alt="Story Image"/>
+    </div>
+    <div class="choices" id="choices"></div>
+  </div>
+</div>
+<script src="mainQuiz.js"></script>
+</body>
+</html>
