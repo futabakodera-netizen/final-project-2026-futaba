@@ -10,7 +10,7 @@ let questions = [
     {
         id:0, // First question
         text: "What color are your eyes?",
-        image: "https://personal-color.co.jp/wp-content/themes/swell_child/analysis/img/4seasons.png",
+        image: "pictures/eyecolor.png",
         choices: {
             "Light brown or light black. It looks like it's sparkling.": ["Warm Autumn", "Warm Spring"],
             "Red brown or Dark gray. The boundary between the iris and the white part of the eye creates a soft impression.": ["Warm Autumn", "Warm Spring"],
@@ -20,53 +20,57 @@ let questions = [
     },
     {
         id:1,
-        text: "What is your favorite color?",
+        text: "What color are your (not colored) hair?",
         image: "lil_images/story/rainbow.png",
         choices: {
-            "blue": ["singing", "what"],
-            "yellow": ["angry", "shocked"],
-            "red": ["soldier", "what"],
-            "some mixture of the above": ["soldier", "singing"]
+            "Deep Brown": ["Warm Autumn"],
+            "Black hair with a soft, gentle texture": ["Cool Summer"],
+            "Thick, lustrous, and distinctly black hair": ["Cool Winter"],
+            "A soft brown when exposed to sunlight.": ["Warm Spring"]
         }
     },
     {
         id:2,
-        text: "What kind of bread is best?",
+        text: "What is your skin color?",
         image: "lil_images/story/baked.png",
         choices: {
-            "sourdough": ["singing", "shocked"],
-            "pizza rolls": ["angry"],
-            "bagels": ["soldier", "shocked"],
-            "french toast": ["what"]
+            "A light ivory shade.The skin is somewhat thin and has a glossy finish.": ["Warm Spring", "Cool Summer"],
+            "It has an ochre base and a matte finish. It may also be prone to looking dull.": ["Warm Autumn"],
+            "A bright, rosy pink shade. The texture is slightly matte, and it tends to bring out a natural flush on the cheeks.": ["Cool winter"],
+            "Fair skin with pink undertones.It has a glossy finish, but conveys little sense of natural flush.": ["Cool winter, Warm Autumn"]
         }
     },
     {
         id:3,
-        text: "would you rather have $200 now, or 20,000 v-bucks in a year?",
+        text: "What happens if you get a sunburn?",
         image: "lil_images/story/fortnite.png",
         choices: {
-            "$200 now": ["angry", "shocked"],
-            "those sweet, sweet v-bucks": ["singing", "what", "soldier"]
+            "It becomes slightly red at first, then becomes brown.": ["Warm Autumn"],
+            "Tan easily, absorbing the sun's rays and turning dark. It is difficult for the skin to return to its original shade.": ["Warm Spring", "Warm Autumn"],
+            "Tan easily, but the tan fades quickly. Also sometimes turn red.": ["Cool Winter", "Cool Summer"],
+            "It tends to turn red easily. It does not absorb, but immediately reverts to its original color.": ["Cool Winter"]
         }
     },
     {
         id:4,
-        text: "what super power would you choose?",
+        text: "What is your natural lip color?",
         image: "lil_images/story/batcat.png",
         choices: {
-            "flight": ["singing"],
-            "invincibility": ["soldier", "angry"],
-            "teleportation": ["shocked"],
-            "telekinesis": ["what"]
+            "Pink/Rose": ["Cool Winter", "Cool Summer"],
+            "Muted orange or beige tones. Subtle natural flush.": ["Warm Autumn"],
+            "Pale salmon pink or a light beige shade": ["Warm Spring", "Warm Autumn"],
+            "Rose-based. It can sometimes make the complexion appear pale or lacking in natural color.": ["Cool Winter"]
         }
     },
     {
         id:5,
-        text: "do you like dogs?",
+        text: "What lip color feels just right for you?",
         image: "lil_images/story/catdog.png",
         choices: {
-            "yes": ["angry"],
-            "no": ["soldier", "what", "singing", "shocked"]
+            "Fuchsia pink or bordeaux shades. Vivid or deep coloration.": ["Warm autumn", "Cool Summer"],
+            "Coral or Orange. Light and glossy coloration.": ["Warm Autumn", "Warm Spring"],
+            "Muted orange or brown tones. Subdued color payoff.": ["Warm Spring"],
+            "Pink or rose. Bright, soft color payoff.": ["Cool Summer", "Cool Winter"]
         }
     }
 ];
