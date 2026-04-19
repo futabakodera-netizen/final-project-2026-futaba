@@ -15,7 +15,7 @@ let questions = [
             "Light brown or light black. It looks like it's sparkling.": ["Warm Autumn", "Warm Spring"],
             "Red brown or Dark gray. The boundary between the iris and the white part of the eye creates a soft impression.": ["Warm Autumn", "Warm Spring"],
             "Dark brown or black. Gives off a calm impression.": ["Cool Winter"],
-            "Dark red brown or black. There is a contrast between the iris and the white part of the eye.": ["angry", "shocked"]
+            "Dark red brown or black. There is a contrast between the iris and the white part of the eye.": ["Cool Summer", "Warm Autumn"]
         }
     },
     {
@@ -117,10 +117,11 @@ function changeQuestion(newQuestion, cats) {
         personalities[cat]++;
         console.log(cat + personalities[cat]);
     });
-
+    console.log("Current question: " + newQuestion);
     currentQuestion = newQuestion;
 
     if (currentQuestion === 6) {
+        console.log("End game go!");
         endGame();
     } else {
         loadQuestion(currentQuestion);
@@ -138,29 +139,44 @@ function endGame() {
         }
     }
 
-    console.log(maxCat);
+    console.log("The result is: "+ maxCat);
+
 
     const text = document.getElementById('question-text');
     const questionImage = document.getElementById('question-image');
     const choicesContainer = document.getElementById('choices');
-    const catImagePath = `lil_images/cats/${maxCat}.png`;
+    const resultImagePath = `results/${maxCat}.png`;
+    const gameContainer = document.getElementById("game-container");
 
-    const img = new Image();
-    img.src = catImagePath;
-    img.className = 'responsive-image';
+    questionImage.src = resultImagePath;
+    choicesContainer.innerHTML = '';
+    text.innerHTML = "You got: " + maxCat;
 
-    // Once the image is loaded, update the DOM
-    img.onload = () => {
-        questionImage.src = img.src;
-        choicesContainer.style.display = 'none';
+    let resultText = document.createElement('p');
+    
+    resultText.style.color = "black";
 
-        text.textContent = `You got ${maxCat} cat!`;
+    if (maxCat == 'Warm Spring') {
+        resultText.innerHTML = "EXPLAIN WARM SPRING";
     }
+    else if (maxCat == 'Cool Summer') {
+        resultText.innerHTML = "EXPLAIN COOL SUMMER";
+    }
+    else if (maxCat == 'Warm Autumn') {
+        resultText.innerHTML = "EXPLAIN WARM AUTUMN";
+    }
+    else if (maxCat == 'Cool Winter') {
+        resultText.innerHTML = "EXPLAIN COOL WINTER";
+    }
+    
+
+    gameContainer.appendChild(resultText);
 
 }
 
 function startGame() {
     document.querySelector('.title').style.display = 'none';
+    document.getElementById('title1').style.display = 'none'
     document.getElementById('homescreen').style.display = 'none';
     document.querySelector('.start-button').style.display = 'none';
     document.getElementById('game-container').style.display = 'flex';
