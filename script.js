@@ -4,7 +4,7 @@ let personalities = {
     "Cool Summer": 0,
     "Warm Autumn": 0,
     "Cool Winter": 0
-};
+}; 
 
 let questions = [
     {
