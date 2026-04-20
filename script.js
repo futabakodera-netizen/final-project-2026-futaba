@@ -21,7 +21,7 @@ let questions = [
     {
         id:1,
         text: "What color are your (not colored) hair?",
-        image: "lil_images/story/rainbow.png",
+        image: "pictures/hair color.png",
         choices: {
             "Deep Brown": ["Warm Autumn"],
             "Black hair with a soft, gentle texture": ["Cool Summer"],
@@ -32,7 +32,7 @@ let questions = [
     {
         id:2,
         text: "What is your skin color?",
-        image: "lil_images/story/baked.png",
+        image: "pictures/skin color.png",
         choices: {
             "A light ivory shade.The skin is somewhat thin and has a glossy finish.": ["Warm Spring", "Cool Summer"],
             "It has an ochre base and a matte finish. It may also be prone to looking dull.": ["Warm Autumn"],
@@ -43,7 +43,7 @@ let questions = [
     {
         id:3,
         text: "What happens if you get a sunburn?",
-        image: "lil_images/story/fortnite.png",
+        image: "pictures/sunburn.png",
         choices: {
             "It becomes slightly red at first, then becomes brown.": ["Warm Autumn"],
             "Tan easily, absorbing the sun's rays and turning dark. It is difficult for the skin to return to its original shade.": ["Warm Spring", "Warm Autumn"],
@@ -54,7 +54,7 @@ let questions = [
     {
         id:4,
         text: "What is your natural lip color?",
-        image: "lil_images/story/batcat.png",
+        image: "pictures/lip color.png",
         choices: {
             "Pink/Rose": ["Cool Winter", "Cool Summer"],
             "Muted orange or beige tones. Subtle natural flush.": ["Warm Autumn"],
@@ -65,7 +65,7 @@ let questions = [
     {
         id:5,
         text: "What lip color feels just right for you?",
-        image: "lil_images/story/catdog.png",
+        image: "pictures/makeup.png",
         choices: {
             "Fuchsia pink or bordeaux shades. Vivid or deep coloration.": ["Warm autumn", "Cool Summer"],
             "Coral or Orange. Light and glossy coloration.": ["Warm Autumn", "Warm Spring"],
@@ -160,13 +160,13 @@ function endGame() {
         resultText.innerHTML = "The base color for the Warm Spring type is yellow, evoking the atmosphere of flowers blooming in the spring. It conveys a warm, bright, and glamorous impression—one that is both charming and youthful.";
     }
     else if (maxCat == 'Cool Summer') {
-        resultText.innerHTML = "EXPLAIN COOL SUMMER";
+        resultText.innerHTML = "The base color for Cool Summer is blue, creating a soft and refreshing atmosphere—evoking images of hydrangeas or evening primroses. It conveys an impression of elegance and sophistication.";
     }
     else if (maxCat == 'Warm Autumn') {
         resultText.innerHTML = "The base color for the Warm Autumn skin tone is yellow, exuding a calm, sophisticated urban vibe. It evokes a chic, warm aesthetic reminiscent of ripe fruit or autumn foliage.";
     }
     else if (maxCat == 'Cool Winter') {
-        resultText.innerHTML = "EXPLAIN COOL WINTER";
+        resultText.innerHTML = "Individuals with a Cool Winter complexion have a blue-based undertone, exuding a sharp, crisp, and sophisticated aura. They project a cool and crystal-clear impression—evocative of a snowy silver landscape or the sheer transparency of crisp winter air.";
     }
     
 
@@ -176,7 +176,7 @@ function endGame() {
 
 function startGame() {
     document.querySelector('.title').style.display = 'none';
-    document.getElementById('title1').style.display = 'none'
+    document.getElementById('title1').style.display = 'none';
     document.getElementById('homescreen').style.display = 'none';
     document.querySelector('.start-button').style.display = 'none';
     document.getElementById('game-container').style.display = 'flex';

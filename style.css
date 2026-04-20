@@ -15,7 +15,7 @@ body, html {
 .container {
     aspect-ratio: 60 / 30;
     width: min(150vw, 120vh);
-    max-height: 250vh;
+    max-height: 300vh;
     padding: 20px;
     border-radius: 15px;
     background: #fdfae9; /* slightly darker */
