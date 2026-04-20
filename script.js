@@ -157,13 +157,13 @@ function endGame() {
     resultText.style.color = "black";
 
     if (maxCat == 'Warm Spring') {
-        resultText.innerHTML = "EXPLAIN WARM SPRING";
+        resultText.innerHTML = "The base color for the Warm Spring type is yellow, evoking the atmosphere of flowers blooming in the spring. It conveys a warm, bright, and glamorous impression—one that is both charming and youthful.";
     }
     else if (maxCat == 'Cool Summer') {
         resultText.innerHTML = "EXPLAIN COOL SUMMER";
     }
     else if (maxCat == 'Warm Autumn') {
-        resultText.innerHTML = "EXPLAIN WARM AUTUMN";
+        resultText.innerHTML = "The base color for the Warm Autumn skin tone is yellow, exuding a calm, sophisticated urban vibe. It evokes a chic, warm aesthetic reminiscent of ripe fruit or autumn foliage.";
     }
     else if (maxCat == 'Cool Winter') {
         resultText.innerHTML = "EXPLAIN COOL WINTER";
