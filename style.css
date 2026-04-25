@@ -72,7 +72,7 @@ body, html {
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     overflow: auto;
     font-size: 25px;
     transition: opacity 0.4s ease-in-out, visibility 0.4s;

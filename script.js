@@ -109,6 +109,10 @@ function loadQuestion(ID) {
         });
        
     }
+    let container = document.getElementById("game-container")
+    container.scrollTo({
+        top: 0
+    });
 }
 
 function changeQuestion(newQuestion, cats) {
